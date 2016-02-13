@@ -9,11 +9,11 @@
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href='#{baseUrl}')= event.title
+      a.navbar-brand(href='#{site.url}')= event.title
     #navbar-collapse.navbar-collapse.collapse
       ul.nav.navbar-nav.navbar-right
         li(class="#{ current.path[0] == 'index' ? 'active' : '' }")
-          a(href='#{baseUrl}') About
+          a(href='#{site.url}') About
         li(class="#{ current.path[0] == 'sign-up' ? 'active' : '' }")
-          a(href='#{baseUrl}/sign-up') Sign Up
+          a(href='#{site.url}/sign-up') Sign Up
     // /.navbar-collapse 
