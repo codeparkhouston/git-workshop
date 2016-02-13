@@ -2,6 +2,7 @@
     "globals": {
         "site": {
             "url": "http://codeparkhouston.com/git-workshop",
+            "baseUrl": "http://codeparkhouston.com/git-workshop",
             "title": "Open Git Workshop in Houston",
             "description": "Get hands-on mentoring working with git and github for any project!",
             "keywords": "git, github, coding, free, meetups, tech",

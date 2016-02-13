@@ -4,10 +4,4 @@ footer
     footer
 
 script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.min.js')
-script(src='/assets/scripts/main.js')
-
-if highlight_code
-  != partial('_partials/highlight')
-
-if google_analytics
-  != partial('_partials/google_analytics')
+script(src='#{baseUrl}/assets/scripts/main.js')
