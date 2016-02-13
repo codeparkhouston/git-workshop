@@ -1,7 +1,0 @@
-for post, slug in public.blog._data
-  if post.layout !== false
-    article
-      a(href='/blog/#{ slug }')
-        h2= post.title + ' '
-          small #{ post.date } • #{ post.author }
-      p= post.description
