@@ -1,0 +1,30 @@
+//
+// Utilities
+// --------------------------------------------------------
+
+.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  p {
+    &.no-margin, &.invited {
+      .no-margin();
+    }
+  }
+}
+
+.invited {
+  + h1 {
+    margin-top: 0;
+  }
+}
+
+.divider {
+  margin-top: 100px;
+
+  &:after {
+    content: '';
+  }
+}

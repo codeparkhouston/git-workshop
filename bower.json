@@ -1,0 +1,37 @@
+{
+  "name": "harp_boilerplate",
+  "version": "0.1.0",
+  "authors": [
+    "Isidro Rodríguez González <isirguezglez@gmail.com>"
+  ],
+  "description": "A basic harp boilerplate with Bootstrap",
+  "main": "index.ejs",
+  "keywords": [
+    "harp",
+    "bootstrap",
+    "font-awesome",
+    "lesshat",
+    "bootswatch"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.irgstudio.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5shiv": "~3.7",
+    "respond": "~1.4",
+    "jquery": "~2.1",
+    "bootstrap": "~3.3",
+    "bootswatch": "~3.3",
+    "font-awesome": "~4.3",
+    "highlightjs": "~8.4",
+    "openwebicons": "~1.3.2"
+  }
+}

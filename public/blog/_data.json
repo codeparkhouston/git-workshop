@@ -1,0 +1,16 @@
+{
+  "rss": {
+    "layout": false
+  },
+  "code-example-post": {
+    "title": "Code example post",
+    "date": "May 20, 2014",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, lacus quis adipiscing hendrerit, nulla velit interdum neque, a varius eros urna in urna. Aliquam non congue purus. Aenean at tempor arcu, in volutpat augue. Sed blandit pellentesque orci, vel tincidunt urna congue sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas ut fermentum quam, at ultricies nisl. Morbi faucibus felis augue, sit amet condimentum eros egestas eget."
+  },
+  "prose-example-post": {
+    "title": "Prose example post",
+    "date": "May 15, 2014",
+    "author": "Paul Newton",
+    "description": "Curabitur feugiat purus id ante sollicitudin cursus. Phasellus vestibulum auctor tellus nec sodales. Sed a porta velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse dignissim tincidunt diam, ut elementum nulla scelerisque eget. Proin vestibulum, felis at ornare facilisis, erat neque auctor lectus, pretium tincidunt nibh est at neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque scelerisque, sem et sagittis gravida, nibh orci vestibulum purus, a ullamcorper turpis metus at purus. Curabitur id mi nibh. Duis orci ligula, bibendum non faucibus sit amet, varius eget odio. Aliquam id placerat erat. Nam fringilla quam vel lectus faucibus, in molestie lacus viverra. Phasellus a mollis massa, a aliquam urna. Donec id nibh nisi."
+  }
+}

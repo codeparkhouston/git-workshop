@@ -1,0 +1,18 @@
+{
+    "globals": {
+        "site": {
+            "url": "http://codeparkhouston.com/git-workshop",
+            "title": "Open Git Workshop in Houston",
+            "description": "Get hands-on mentoring working with git and github for any project!",
+            "keywords": "git, github, coding, free, meetups, tech",
+            "language": "en",
+            "author": "Code Park"
+        },
+        "event": {
+            "title": "Houston Git Workshop"
+        },
+        "disqus": "",
+        "google_analytics": "",
+        "highlight_code": true
+    }
+}

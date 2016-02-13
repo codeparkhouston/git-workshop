@@ -1,0 +1,28 @@
+//
+// Main LESS file
+// --------------------------------------------------------
+
+// Paths
+@bower: "../../../bower_components";
+
+// Twitter Bootstrap <http://getbootstrap.com/>
+// A copy oh the Bootstrap main file to personalize the framework easily.
+// Default: all selected except glyphicons (replaced with Font-Awesome)
+@import "@{bower}/bootstrap/less/bootstrap.less";
+
+// Bootswatch themes <http://bootswatch.com/>
+@import "@{bower}/bootswatch/readable/bootswatch.less";
+@import "@{bower}/bootswatch/readable/variables.less";
+
+// Font-Awesome <http://fontawesome.io/>
+@import "@{bower}/font-awesome/less/font-awesome.less";
+@import (less) "@{bower}/openwebicons/css/openwebicons-bootstrap.min.css";
+
+// HighlightJS <http://highlightjs.org/>
+// @import (less) "@{bower}/highlightjs/styles/github.css";
+
+// Your custom CSS or LESS files
+@import "_variables.less";
+@import "_mixins.less";
+@import "_base.less";
+@import "_utilities.less";

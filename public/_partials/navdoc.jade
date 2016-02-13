@@ -1,0 +1,17 @@
+ul.nav.nav-pills.nav-stacked.nav-docs
+  li(class="#{ current.source == 'index' ? 'active' : '' }")
+    a(href="#{site.url}/doc/") Documentation example
+  li
+    h1 Recipes
+  li(class="#{ current.source == 'lorem' ? 'active' : '' }")
+    a(href="#{site.url}/doc/recipes/lorem") Lorem
+  li(class="#{ current.source == 'ipsum' ? 'active' : '' }")
+    a(href="#{site.url}/doc/recipes/themes") How to create themes
+  li(class="#{ current.source == 'dolor' ? 'active' : '' }")
+    a(href="#{site.url}/doc/recipes/dolor") Dolor
+  li
+    h1 Links
+  li
+    a(href="https://github.com/isidrorg/hbbp") Github repository
+  li
+    a(href="http://harpjs.com") Harp website
