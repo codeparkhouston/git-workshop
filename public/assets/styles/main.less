@@ -26,3 +26,45 @@
 @import "_mixins.less";
 @import "_base.less";
 @import "_utilities.less";
+
+[class^="role-"] {
+  display: none;
+}
+
+[data-role="mentor"]{
+  .mentor[class^="role-"] {
+    display: block;
+  }
+}
+
+[data-role="learner"]{
+  .learner[class^="role-"] {
+    display: block;
+  }
+}
+
+.form-group.required > label {
+  position: relative;
+  &::after {
+    color: @gray-light;
+    position: absolute;
+    font-weight: 100;
+    font-size: 0.75em;
+    bottom: -1em;
+    right: 14px;
+  }
+}
+
+.form-group.required > label::after {
+  content: '(required)';
+}
+
+.form-group.valid > label::after {
+  content: "\2713 ";
+  color: rgba(95, 204, 95, 1);
+}
+
+.form-group.not-email > label::after {
+  content: '(please enter an email)';
+  color: @gray-light;
+}

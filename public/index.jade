@@ -1,9 +1,7 @@
 .jumbotron
   .container
     .row
-      .col-lg-4.col-lg-offset-1.col-md-4.hidden-sm.hidden-xs
-        img.img-responsive(src='https://octodex.github.com/images/femalecodertocat.png')
-      .col-lg-6.col-md-8.col-xs-12
+      .col-xs-12.text-center
         p.invited You're invited to a
         h1 git-together
         p a free workshop for beginners to get hands-on experience with 
@@ -12,12 +10,10 @@
           a(href='http://git-scm.com', target='_blank') Git
           | !
         p.no-margin
-          i February 2nd &amp; 3rd 2016, 6:30 - 9 PM 
-        p at 
-          a(href='http://eqheights.com/', target='_blank') EQ Heights
+          i March 26, 2016
         p
-          a.btn.btn-primary.btn-lg(role='button') Sign Up »
-          a.btn.btn-primary.btn-lg.btn-link(role='button') I'd like to mentor »
+          a.btn.btn-primary.btn-lg(role='button', href='./sign-up/?role=learner') Sign Up »
+          a.btn.btn-primary.btn-lg.btn-link(role='button', href='./sign-up/?role=mentor') I'd like to mentor »
 
 .container
   .row
@@ -25,25 +21,13 @@
       h2 What we'll do
       h4
         i.fa.fa-github
-        |  GitHub 
-        small
-          i Feb
-            span.hidden-md ruary
-            |  2nd, Tue
-            span.hidden-md sday
-            | , 6:30 - 9 PM
+        |  GitHub
       p Get your first repo onto GitHub following along with 
         a(href='https://guides.github.com/activities/hello-world/', target='_blank') GitHub's Hello World
         | .  No coding required!
       h4
         i.icon-git-colored
-        | Git 
-        small
-          i Feb
-            span.hidden-md ruary
-            |  3rd, Wed
-            span.hidden-md nesday
-            | , 6:30 - 9 PM
+        | Git
       p Dig in with the commandline as we learn about using git to get a project from our computers onto GitHub.
 
     .divider.visible-sm-block.visible-xs-block

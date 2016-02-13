@@ -1,13 +1,40 @@
 .container
   .row
-    .col-md-12
+    .col-sm-12
       h1 Sign Up
-      form
-        .form-group
-          label I'm attending as a
+  .row
+    form#sign-up.form-horizontal
+      .form-group.required
+        label.control-label.col-md-3.col-sm-4(for='name') My name is
+        .col-md-5.col-sm-8
+          input.form-control#name(type='text', name='name', placeholder='Jane', required)
+      .form-group.required
+        label.control-label.col-md-3.col-sm-4(for='role') I'm attending as a
+        .col-md-5.col-sm-8#role
           label.radio-inline
-            input(type='radio', value='learner')
+            input(type='radio', name='role', value='learner', required)
             | Learner
           label.radio-inline
-            input(type='radio', value='mentor')
+            input(type='radio', name='role', value='mentor', required)
             | Mentor
+      .form-group.required
+        label.control-label.col-md-3.col-sm-4(for='email') You can email me at
+        .col-md-5.col-sm-8
+          input.form-control#email(type='email', name='email', placeholder='jane@doe.com', required)
+      .form-group
+        label.control-label.col-md-3.col-sm-4(for='github') My GitHub username is
+        .col-md-5.col-sm-8
+          input.form-control#github(type='text', name='github', placeholder='janedoer')
+      .form-group
+        label.control-label.col-md-3.col-sm-4(for='details')
+          .role-detail.mentor I learned to use git because...
+          .role-detail.learner I'd like to learn because...
+        .col-md-5.col-sm-8
+          textarea.form-control#details(name='details', placeholder='Something about me...')
+      .form-group
+        label.control-label.col-md-3.col-sm-4(for='comments') Questions or comments?
+        .col-md-5.col-sm-8
+          textarea.form-control#comments(name='comments', placeholder='')
+      .form-group
+        .col-md-5.col-sm-8.col-md-offset-3.col-sm-offset-4
+          button.btn.btn-primary(type='submit') Check me in!
