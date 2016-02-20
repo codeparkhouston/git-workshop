@@ -3,7 +3,7 @@
 // --------------------------------------------------------
 
 (function(window){
-  var SIGN_UP_FORM_ACTION = 'https://script.google.com/macros/s/AKfycbwo5Wg3o_z3tf9Cr6v9Y95fD9_aiBnQ5UUzJGyoJQe8K1_-oCs/exec';
+  var API_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwo5Wg3o_z3tf9Cr6v9Y95fD9_aiBnQ5UUzJGyoJQe8K1_-oCs/exec';
   var WORKSHOP = 'git-20160326';
 
   document.onreadystatechange = function () {
@@ -13,7 +13,8 @@
   }
 
   function initialize(){
-    setupForm('sign-up', {action: SIGN_UP_FORM_ACTION}, {sheet_name: WORKSHOP});
+    setupForm('sign-up', {action: API_ENDPOINT}, {sheet_name: WORKSHOP});
+    // getParticipants('whos-coming', {action: API_ENDPOINT}, {sheet_name: WORKSHOP});
   }
 
   function setupForm(formId, options, defaultParams){
@@ -23,12 +24,13 @@
     }
     var roles = form.querySelectorAll('[name=role]');
     var textareas = document.getElementsByTagName('textarea');
-    var defaultRole = location.search.split('role=')[1];
+    var queryData = getQueryJSON();
+    defaultParams = _.extend({}, defaultParams, _.omit(queryData, 'role'));
 
     handleForm(form, options, defaultParams);
     handleRoleChange(form, roles);
     handleTextareas(textareas);
-    setDefaultRole(form, defaultRole);
+    setDefaultRole(form, queryData.role);
   }
 
   function handleRoleChange(form, roles){
@@ -119,7 +121,7 @@
   }
 
   function submitForm(options, defaultParams, submitEvent){
-    var formData;
+    var formData, formSubmit;
     submitEvent.preventDefault();
 
     setModeTo(this, 'submitting');
@@ -176,6 +178,33 @@
         this.style.height = this.scrollHeight + 20 + 'px';      
       }
     }
+  }
+
+  // function getParticipants(id, options, defaultParams){
+  //   var iframe = document.getElementById(id);
+  //   var getUrl = options.action + '?sheetname' + defaultParams.sheet_name;
+  //   iframe.src = getUrl;
+  //   var participantsGET = new XMLHttpRequest();
+  //   participantsGET.addEventListener("load", function(response){
+  //     console.info(response);
+  //     console.info(this);
+  //   });
+  //   participantsGET.open("GET", options.action, true);
+  //   participantsGET.withCredentials = true;
+  //   participantsGET.send(defaultParams);
+  // }
+
+
+  function getQueryJSON() {
+    var queries = location.search.slice(1).split('&');
+    var result = {};
+
+    queries.forEach(function(query) {
+      query = query.split('=');
+      result[query[0]] = decodeURIComponent(query[1] || '');
+    });
+
+    return JSON.parse(JSON.stringify(result));
   }
 
 }(window))
