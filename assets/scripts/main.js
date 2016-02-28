@@ -14,6 +14,7 @@
 
   function initialize(){
     setupForm({action: API_ENDPOINT}, {sheet_name: WORKSHOP});
+    displayAttendees("attendees", attendees);
   }
 
   function setupForm(options, defaultParams){

@@ -11443,3 +11443,50 @@ fieldset[disabled] .tito-submit.focus {
     color: #4582EC;
     background-color: #fff
 }
+
+#attendees {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.attendee {
+  position: relative;
+  background-color: #000;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.attendee.attendee-no-photo img {
+  height: 43px;
+}
+
+.attendee[data-packed] {
+  opacity: 1;
+}
+
+.attendee img.img-responsive {
+  width: 100%;
+}
+
+.attendee::before {
+  font-style: italic;
+  font-size: 0.75em;
+  content: attr(data-name);
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  z-index: 0.75;
+  opacity: 0;
+}
+
+.attendee:hover img, .attendee.attendee-no-photo img{
+  opacity: 0.4;
+}
+
+.attendee:hover::before, .attendee.attendee-no-photo::before{
+  opacity: 1;
+}
