@@ -82,4 +82,10 @@ var attendees = [{
   },{
     name: 'Neeraj',
     photo: '//avatars2.githubusercontent.com/u/1100564?v=3&s=460'
+  },{
+    name: 'Ju',
+    photo: 'http://photos3.meetupstatic.com/photos/member/2/c/7/6/thumb_140591382.jpeg'
+  },{
+    name: 'John',
+    photo: 'http://photos2.meetupstatic.com/photos/member/6/8/8/0/thumb_36746752.jpeg'    
 }];
