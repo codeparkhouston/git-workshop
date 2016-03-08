@@ -125,4 +125,16 @@ var attendees = [{
   },{
     name: 'Toan',
     photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/9/3/f/d/thumb_254437885.jpeg'
+  },{
+    name: 'Salvador'
+  }, {
+    name: 'James',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/8/d/5/thumb_250202261.jpeg'
+  }, {
+    name: 'Riwaj',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/d/f/7/a/thumb_254397210.jpeg'
+  }, {  
+    name: 'AJ'
+  }, {
+    name: 'Paul'
   }];
