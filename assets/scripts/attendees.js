@@ -137,4 +137,38 @@ var attendees = [{
     name: 'AJ'
   }, {
     name: 'Paul'
+  }, {
+    name: 'Priya'
+  },{
+    name: 'Mahsa'
+  },{
+    name: 'Mahsa'
+  },{
+    name: 'Brian',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/5/0/8/0/thumb_252920608.jpeg'
+  },{
+    name: 'Yogita'
+  },{
+    name: 'Tiru'
+  },{
+    name: 'Brenda',
+    photo: 'https://avatars2.githubusercontent.com/u/11045840?v=3&s=400'
+  },{
+    name: 'Mamie',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/b/8/6/6/thumb_244847206.jpeg'
+  },{
+    name: 'Viroj',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/e/6/4/e/thumb_254638958.jpeg'
+  },{
+    name: 'Tracy',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/b/f/6/0/thumb_253908992.jpeg'
+  },{
+    name: 'Urvisha',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/7/d/0/a/thumb_247052010.jpeg'
+  },{
+    name: 'Yichi',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/b/0/e/2/thumb_194025282.jpeg'
+  },{
+    name: 'Flo',
+    photo: 'https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/7/1/7/c/thumb_173969052.jpeg'
   }];
